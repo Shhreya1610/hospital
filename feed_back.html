@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Feedback</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background for the page */
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #333; /* Dark color for headings */
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Feedback Form Section -->
+    <section>
+        <h2>We Value Your Feedback</h2>
+        <p>Please provide your feedback on your experience with our online pharmacy.</p>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="experience">How was your experience?</label><br>
+            <textarea id="experience" name="experience" placeholder="Tell us about your experience..." rows="4" required></textarea><br><br>
+
+            <label for="rating">Rate Your Experience:</label><br>
+            <select id="rating" name="rating" required>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+</body>
+</html>
